@@ -69,9 +69,9 @@
     </form>
 
     <section id="error-btns">
-      <button>Console Log</button>
-      <button>Console Error</button>
-      <button>Console Count</button>
+      <button id="console-log-button">Console Log</button>
+      <button id="console-error-button">Console Error</button>
+      <button id="console-count-button">Console Count</button>
       <button>Console Warn</button>
       <button>Console Assert</button>
       <button>Console Clear</button>
@@ -102,6 +102,12 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+    document.getElementById("console-log-button").addEventListener("click", () =>{
+      console.log("Console Log Demo");
+    });
+    document.getElementById("console-error-button").addEventListener("click", () =>{
+      console.error("Console Error Demo");
+    })
   </script>
 </body>
 
